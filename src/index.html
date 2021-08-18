@@ -8,6 +8,14 @@
   <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 <body>
+  <!--Retirar as setas do Input type="number"-->
+  <style>
+    input[type=number]::-webkit-inner-spin-button,
+       input[type=number]::-webkit-outer-spin-button {
+           -webkit-appearance: none;
+           margin: 0;
+       }
+   </style>
   <app-root></app-root>
 </body>
 </html>

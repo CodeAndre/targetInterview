@@ -1,0 +1,83 @@
+
+<div class="appContainer">
+
+    <div class="content container1 ">
+
+        <form action="" class="mt-2">
+           <label 
+                for=""
+                #labelValue>
+               Sequência de Fibonacci {{displayValue}}
+           </label>
+        </form>
+        <button 
+            type="button" 
+            class="btn btn-info mt-3"
+            (click)="changeValue(displayValue)"
+        > 
+            Fibonacci
+        </button>
+
+    </div>
+  
+    <div class="content container2">
+
+        <div class="hide">
+            <div class="" *ngIf="!showDiv">
+        
+                <img
+                    src="../assets/img1.jpeg"
+                    alt="imagem"
+                    class="imagem1"
+                >
+
+            </div>
+        </div>
+        <button 
+            type="button" 
+            class="btn btn-success mt-2 visibility"
+            (click)="openDiv()"
+        >
+            Alterar Visibilidade
+        </button>
+        <label 
+            for="status" 
+            class="mt-1"
+            >
+            Status
+            <input 
+                *ngIf="!showDiv"
+                type="text" 
+                name="status" 
+                id="status"
+                placeholder="Visível"
+                disabled=""
+            >
+            <input 
+            *ngIf="showDiv"
+            type="text" 
+            name="status" 
+            id="status"
+            placeholder="Invisivel"
+            disabled=""
+        >
+        </label>
+
+    </div>
+  
+    <div class="content container3">
+
+      <label for="matriz">
+        <textarea 
+          name="matriz" 
+          id="matriz" 
+          cols="21" 
+          rows="3"
+          maxlength="99">
+        </textarea>
+      </label>
+      <img src="../assets/img2.png" alt="">
+      <input type="text" class="mt-2">
+
+    </div>
+  </div>

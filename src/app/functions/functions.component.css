@@ -1,0 +1,45 @@
+img {
+    display: block;
+    width: 330px;
+    height: 180px;
+    z-index: 555;
+}
+input {
+    display: block;
+}
+
+.appContainer {
+    display: grid;
+    grid-template-rows: 3;
+    width: 100vw;
+    height: 100vh;
+}
+
+.container1 {
+    border: 2px solid red;
+    grid-row: 1;
+    height: 310px;
+}
+.container2 {
+    border: 2px solid blue;
+    grid-row: 2;
+    height: 310px;
+}
+.imagem1 {
+    width: 330px;
+    height: 180px;
+}
+.hide {
+    background-color: #fff;
+    width: 330px;
+    height: 180px;
+    z-index: 1;
+}
+.visibility {
+    display: block;
+}
+.container3 {
+    border: 2px solid green;
+    grid-row: 3;
+    height: 310px;
+}
