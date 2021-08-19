@@ -29,5 +29,23 @@ export class FunctionsComponent implements OnInit {
   openDiv(): void {
     this.showDiv = !this.showDiv;
   }
-  
+
+  labelMatriz: number[] = [
+    0, 1 , 2 , 3 , 4 , 5 , 6 , 7 , 8 , 9 , 10
+  ]
+
+  filterMatriz(n: any) {
+    console.log('to pegando pcr')
+    return this.labelMatriz = n
+  }
+
+
+
+
+
+
+  currentValue = '';
+  teste(val: any){
+    this.currentValue = val
+  }
 } 

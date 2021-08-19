@@ -18,6 +18,10 @@
             Fibonacci
         </button>
 
+        <input type="text" #box>
+        <button (click)="teste(box.value)">Teste</button>
+        <h2>{{currentValue}}</h2>
+
     </div>
   
     <div class="content container2">
@@ -29,7 +33,7 @@
                     src="../assets/img1.jpeg"
                     alt="imagem"
                     class="imagem1"
-                >
+                />
 
             </div>
         </div>
@@ -52,32 +56,40 @@
                 id="status"
                 placeholder="Visível"
                 disabled=""
-            >
+            />
             <input 
-            *ngIf="showDiv"
-            type="text" 
-            name="status" 
-            id="status"
-            placeholder="Invisivel"
-            disabled=""
-        >
+                *ngIf="showDiv"
+                type="text" 
+                name="status" 
+                id="status"
+                placeholder="Invisivel"
+                disabled=""
+            />
         </label>
 
     </div>
   
     <div class="content container3">
 
-      <label for="matriz">
-        <textarea 
-          name="matriz" 
-          id="matriz" 
-          cols="21" 
-          rows="3"
-          maxlength="99">
-        </textarea>
-      </label>
-      <img src="../assets/img2.png" alt="">
-      <input type="text" class="mt-2">
+        <label for="matriz">
+            Matriz: {{labelMatriz}}
+        </label>
+         <input 
+            type="number" 
+            class="mt-2 myInput"
+            #matriz
+            min="0"
+            max="10"
+            size="35"
+            placeholder="0 a 10"
+        />
+
+        <img
+            src="../assets/img2.png"
+            alt="imagem2"
+            (click)="filterMatriz(matriz.value)"
+        />
+      
 
     </div>
   </div>
