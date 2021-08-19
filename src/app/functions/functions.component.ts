@@ -35,17 +35,7 @@ export class FunctionsComponent implements OnInit {
   ]
 
   filterMatriz(n: any) {
-    console.log('to pegando pcr')
     return this.labelMatriz = n
   }
 
-
-
-
-
-
-  currentValue = '';
-  teste(val: any){
-    this.currentValue = val
-  }
 } 

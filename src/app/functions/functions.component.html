@@ -18,10 +18,6 @@
             Fibonacci
         </button>
 
-        <input type="text" #box>
-        <button (click)="teste(box.value)">Teste</button>
-        <h2>{{currentValue}}</h2>
-
     </div>
   
     <div class="content container2">
@@ -76,12 +72,13 @@
         </label>
          <input 
             type="number" 
-            class="mt-2 myInput"
+            class="mt-2"
+            style=" width:210px;"
             #matriz
             min="0"
             max="10"
             size="35"
-            placeholder="0 a 10"
+            placeholder="Informe um valor de 0 a 10"
         />
 
         <img
